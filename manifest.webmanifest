@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "Hnmgram — find your people",
+  "short_name": "Hnmgram",
+  "description": "A little more connection, a little less noise.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f6f9f7",
+  "theme_color": "#f6f9f7",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

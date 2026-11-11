@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f9f7" />
+  <meta name="description" content="A little more connection, a little less noise. Meet Hnmgram." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Hnmgram" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+  <title>Hnmgram — find your people</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <aside class="sidebar">
+      <button class="brand" data-page="home" aria-label="Hnmgram home"><span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M12 8.5v15l12-7.5z"/></svg></span><span class="brand-name">Hnmgram</span></button><div class="brand-tagline">alternatifimiz aynı ama amaçlar farklı</div>
+      <div class="sidebar-label">YOUR SPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-page="explore"><span class="nav-icon">⌕</span><span>Explore</span></button>
+        <button class="nav-item" data-page="reels"><span class="nav-icon">▷</span><span>Reels</span><span class="nav-pulse"></span></button>
+        <button class="nav-item" data-page="create"><span class="nav-icon">＋</span><span>Create post</span></button>
+        <button class="nav-item" data-page="notifications"><span class="nav-icon">♡</span><span>Notifications</span><span class="count-dot">3</span></button>
+        <button class="nav-item" data-page="messages"><span class="nav-icon">▱</span><span>Messages</span></button>
+        <button class="nav-item" data-page="channels"><span class="nav-icon">◉</span><span>Channels</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-label">MAKE YOURS</div>
+        <button class="nav-item" id="themeToggle"><span class="nav-icon">☼</span><span>Switch appearance</span></button>
+        <button class="profile-shortcut" data-page="profile"><img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&fit=crop&crop=faces" alt="Your profile"><span><b>Alex Morgan</b><small>@alexmorgan</small></span><span class="more-dot">•••</span></button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-brand" data-page="home"><span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M12 8.5v15l12-7.5z"/></svg></span><span class="brand-name">Hnmgram</span></button><div class="topbar-title" id="pageTitle">Home</div><div class="topbar-actions"><button class="icon-button search-trigger" aria-label="Search">⌕</button><button class="icon-button" id="topTheme" aria-label="Toggle theme">☼</button><button class="top-avatar" data-page="profile"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=96&h=96&fit=crop&crop=faces" alt="Profile"></button></div></header>
+      <div class="page-layout"><section id="pageContent" class="page-content"></section><aside id="rightRail" class="right-rail"></aside></div>
+    </main>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button class="mobile-nav-item active" data-page="home"><span>⌂</span><small>Home</small></button><button class="mobile-nav-item" data-page="explore"><span>⌕</span><small>Explore</small></button><button class="mobile-create" data-page="create" aria-label="Create post">＋</button><button class="mobile-nav-item" data-page="reels"><span>▷</span><small>Reels</small></button><button class="mobile-nav-item" data-page="profile"><span>◯</span><small>Profile</small></button>
+    </nav>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
